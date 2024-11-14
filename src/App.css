@@ -1,5 +1,5 @@
 .upperDiv {
-  padding:0 4rem;
+  padding: 0 4rem;
   display: flex;
   background: linear-gradient(to right, #e2213c, #64111e, #096979, #00d4ff);
   color: white;
@@ -32,8 +32,69 @@
   border: 2px solid white;
   cursor: pointer;
 }
+
 .request p:hover {
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   padding: 0.5rem 1rem;
   border-radius: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+ul {
+  position: relative;
+  right: 0;
+  display: flex;
+  width: 40%;
+  text-align: right;
+  justify-content: space-evenly;
+}
+
+.main-img {
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.item {
+  width: 45%;
+  background-color: #096979;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+}
+input{
+  padding: 8px;
+  border-radius: 10px;
+}
+textarea{
+  padding: 8px;
+  border-radius: 10px;
+}
+.contact{
+  width: 25%;
+  background-color: silver;
+  padding: 8px;
+  border-radius: 25px;
+  margin: 5% 35%;
+}
+button{
+  background-color: black;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 20px;
 }

@@ -1,5 +1,7 @@
 // src/pages/Contact.js
 import React, { useState } from 'react';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -18,7 +20,10 @@ const Contact = () => {
     };
 
     return (
-        <div>
+        <div className='center'>
+            <Header />
+            <Navbar />
+            <div className='contact'>
             <h2>Contact Us</h2>
             {submitted ? (
                 <p>Thank you for contacting us! We will get back to you shortly.</p>
@@ -27,18 +32,21 @@ const Contact = () => {
                     <label>
                         Name:
                         <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-                    </label>
+                    </label><br/><br />
                     <label>
                         Email:
                         <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                    </label>
-                    <label>
+                        </label><br/><br />
+                        <label>
                         Message:
                         <textarea name="message" value={formData.message} onChange={handleChange} required />
-                    </label>
-                    <button type="submit">Submit</button>
+                        </label><br/><br />
+                        <button type="submit">Submit</button>
+                        <br/><br />
+
                 </form>
             )}
+            </div>
         </div>
     );
 };
